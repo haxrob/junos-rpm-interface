@@ -29,7 +29,7 @@ services {
 #### Fetch host status and RTT
 Provide the probe and test name and return a list containing the host status (1 or 0) and the round trip time in microseconds -
 ```python 
->>> from ninx_rpm import RpmCollector
+>>> from junos_rpm import RpmCollector
 >>> rpm = RpmCollector('192.168.1.1', 'public')
 >>> rpm.probe_result('google', 'dns1')
 [1, '44420']
